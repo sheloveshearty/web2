@@ -1,0 +1,248 @@
+html{
+  zoom: 85%;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Corporate-A-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Corporate-A-Bold.woff2') format('woff2'),  
+       url('../fonts/Corporate-A-Bold.woff') format('woff');
+
+}
+
+body{
+  background: #070a1b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #fff;
+  font-family: "Roboto Condensed", serif;
+
+}
+
+.container{
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+.header__top{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+  padding: 32px 0;
+}
+
+.list{
+  display: flex;
+}
+
+.list__item + .list__item{
+  margin-left: 30px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.list__link{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background .3s;
+}
+
+.list__link:hover{
+  background-color: #c1a1d2;
+}
+
+.header__content{
+  background-image: url(../images/1.png);
+  min-height: calc(100vh - 100px);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  position: relative;
+}
+
+.header__content::before {
+  content: "";
+  background-image: url(../images/logo.svg);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+}
+
+.title{
+    font-family: 'Corporate-A-Bold';
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.title-descr{
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+}
+
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+
+.section__title{
+  margin-bottom: 26px;
+  text-transform: uppercase;
+  font-family: 'Corporate-A-Bold';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #f402a2;
+}
+
+.section__text{
+  font-family: 'Roboto Condensed';  
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.concept{
+  padding-top: 150px;
+  margin-bottom: 150px;
+}
+
+.concept__inner{
+  max-width: 900px;
+  margin-left: auto;
+}
+
+.premeire{
+  margin-bottom: 150px;
+}
+
+.premiere__inner{
+  display: flex;
+  gap: 60px;
+}
+
+.premiere__img{
+  margin-bottom: 20px;
+}
+
+.premiere__img-1{
+  padding-top: 160px;
+  margin-bottom: 20px;
+}
+
+.premiere__btn{
+  text-transform: uppercase;
+  font-family: 'Corporate-A-Bold';
+  display: block;
+  width: 100%;
+  font-size: 26px;
+  line-height: 120%;
+  color: #f402a2;
+  text-align: center;
+  padding: 14px;
+  border: 1px solid #f402a2;
+  transition: all .3s;
+}
+
+.premiere__btn:hover{
+  color: #53A1CB;
+  border: 1px solid #53A1CB;
+}
+
+.video{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.video__img{
+  margin-bottom: 25px;
+}
+
+.img{
+  border-radius: 5px;
+}
+
+.video__btn{
+  text-transform: uppercase;
+  font-family: 'Corporate-A-Bold';
+  display: block;
+  width: 100%;
+  gap: 10px;
+  font-size: 26px;
+  line-height: 120%;
+  color: #f402a2;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+  border: 1px solid #f402a2;
+  transition: all .3s;
+}
+
+.video__btn:hover {
+  color: #53A1CB;
+  border: 1px solid #53A1CB;
+}
+
+.video__btn:hover path{
+  fill: #53A1CB;
+  transition: all .3s;
+}
+
+.interior__text{
+  max-width: 280px;
+  padding-bottom: 15px;
+}
+
+.interior{}
